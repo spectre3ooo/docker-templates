@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Network:Management Productivity: Tools:</Category>
+  <Name>mssql</Name>
+  <Description>
+    Official images for Microsoft SQL Server on Linux for Docker Engine.
+  </Description>
+  <Overview>
+    Official images for Microsoft SQL Server on Linux for Docker Engine.
+  </Overview>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/microsoft/mssql-server-linux/</Registry>
+  <GitHub>https://github.com/docker-library/mysql/tree/master/5.7/</GitHub>
+  <Repository>microsoft/mssql-server-linux</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1433</HostPort>
+        <ContainerPort>1433</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+	  <Name>SA_PASSWORD</Name>
+	  <Value>root_password</Value>
+	</Variable>
+	<Variable>
+	  <Name>ACCEPT_EULA</Name>
+	  <Value>Y</Value>
+	</Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mssql</HostDir>
+      <ContainerDir>/var/opt/mssql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner>https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png</Banner>
+  <Icon>https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png</Icon>
+</Container>
