@@ -42,6 +42,6 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Banner>https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png</Banner>
-  <Icon>https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png</Icon>
+  <Banner>https://github.com/spectre3ooo/docker-templates/raw/master/spectre3ooo/images/mssql-logo.png</Banner>
+  <Icon>https://github.com/spectre3ooo/docker-templates/raw/master/spectre3ooo/images/mssql-icon.png</Icon>
 </Container>
